@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+- RegisterBlock trait (like `Deref`, but don't require `self` instance,
+  only for fixed in memory peripherals)
 - Generated crates now contain the git commit hash and date of svd2rust
   compilation.
 

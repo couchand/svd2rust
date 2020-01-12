@@ -74,6 +74,14 @@ pub fn render(
                 unsafe { &*#name_pc::ptr() }
             }
         }
+        impl crate::RegisterBlock for #name_pc {
+            type RB = #base::RegisterBlock;
+
+            #[inline(always)]
+            fn rb() -> *const Self::RB {
+                #name_pc::ptr()
+            }
+        }
     });
 
     // Derived peripherals may not require re-implementation, and will instead
