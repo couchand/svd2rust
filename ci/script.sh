@@ -446,7 +446,7 @@ main() {
 
             # OK
             #test_svd M051_Series
-            test_svd NUC100_Series
+            #test_svd NUC100_Series
         ;;
 
         NXP)
