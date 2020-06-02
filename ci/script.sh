@@ -437,7 +437,7 @@ main() {
             # test_svd nrf52
 
             # OK
-            test_svd nrf51
+            #test_svd nrf51
         ;;
 
         Nuvoton)
