@@ -453,7 +453,7 @@ main() {
             echo '[dependencies.bare-metal]' >> $td/Cargo.toml
             echo 'version = "0.2.0"' >> $td/Cargo.toml
 
-            test_svd MK22F25612
+            #test_svd MK22F25612
             test_svd MKW41Z4
 
             # BAD-SVD two enumeratedValues have the same name
