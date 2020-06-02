@@ -185,7 +185,7 @@ main() {
             #test_svd MK02F12810
             # test_svd MK10D10
             # test_svd MK10D5
-            test_svd MK10D7
+            #test_svd MK10D7
             # test_svd MK10DZ10
             # test_svd MK10F12
             # test_svd MK11D5
@@ -445,7 +445,7 @@ main() {
             echo 'version = "0.2.0"' >> $td/Cargo.toml
 
             # OK
-            test_svd M051_Series
+            #test_svd M051_Series
             test_svd NUC100_Series
         ;;
 
