@@ -317,7 +317,7 @@ main() {
             echo 'version = "0.2.0"' >> $td/Cargo.toml
 
             # OK
-            test_svd MB9AF10xN
+            #test_svd MB9AF10xN
             test_svd MB9AF10xR
             test_svd MB9AF11xK
             test_svd MB9AF11xL
@@ -700,7 +700,7 @@ main() {
             echo '[dependencies.xtensa-lx6-rt]' >> $td/Cargo.toml
             echo 'git = "https://github.com/esp-rs/xtensa-lx6-rt.git"' >> $td/Cargo.toml
 
-            test_svd_for_target esp32 https://raw.githubusercontent.com/arjanmels/esp32/add-output-svd/svd/esp32.svd
+            #test_svd_for_target esp32 https://raw.githubusercontent.com/arjanmels/esp32/add-output-svd/svd/esp32.svd
         ;;
 
     esac
