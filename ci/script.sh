@@ -182,7 +182,7 @@ main() {
 
             # OK
             # NOTE it would take too long to test all these so we only a few of each family
-            test_svd MK02F12810
+            #test_svd MK02F12810
             # test_svd MK10D10
             # test_svd MK10D5
             test_svd MK10D7
@@ -454,7 +454,7 @@ main() {
             echo 'version = "0.2.0"' >> $td/Cargo.toml
 
             #test_svd MK22F25612
-            test_svd MKW41Z4
+            #test_svd MKW41Z4
 
             # BAD-SVD two enumeratedValues have the same name
             # test_svd LPC11Exx_v5
