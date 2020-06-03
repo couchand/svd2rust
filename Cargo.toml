@@ -45,6 +45,7 @@ thiserror = "1.0.5"
 [dependencies.svd-parser]
 #version = "0.9"
 git = "https://github.com/rust-embedded/svd"
+branch = "check-derived-name"
 features = ["derive-from"]
 
 [dependencies.syn]
