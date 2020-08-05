@@ -160,6 +160,19 @@ pub fn render(
         (quote!(#[repr(u8)]), quote!(*#self_token as u8))
     };
 
+    if target == Target::Msp430 {
+        let interrupt_enum = quote! {
+            ///Enumeration of all the interrupts. This enum is seldom used in application or library crates. It is present primarily for documenting the device's implemented interrupts.
+            #[derive(Copy, Clone, Debug, PartialEq, Eq)]
+            #enum_repr
+            pub enum Interrupt {
+                #variants
+            }
+        };
+
+        root.extend(interrupt_enum);
+    }
+
     let interrupt_enum = quote! {
         ///Enumeration of all the interrupts
         #[derive(Copy, Clone, Debug, PartialEq, Eq)]
@@ -176,7 +189,7 @@ pub fn render(
         }
     };
 
-    if target == Target::CortexM || target == Target::Msp430 {
+    if target == Target::CortexM {
         root.extend(interrupt_enum);
     } else {
         mod_items.extend(quote! {
